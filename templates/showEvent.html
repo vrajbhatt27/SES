@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventDetails | SES</title>
+</head>
+
+<body>
+    <h1>{{ name }}</h1>
+    <form action="showEvent" method="POST">
+        {% csrf_token %}
+        Attende Name: <input type="text" name="attende_name"> <br> <br>
+        Attende email: <input type="email" name="attende_email"> <br> <br>
+        Attende phone: <input type="number" name="attende_phone"> <br> <br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+
+</html>
